@@ -8,7 +8,9 @@ We are using Browserify as a build tool to convert our typescript and tsx code i
 # How to use?
 
 ```shell
-git clone https://github.com/dimpu/react-quickstart.git
+git clone https://github.com/dimpu/react-quickstart.git ReactOne
+cd ReactOne
+npm i
 ```
 
 ## to run
