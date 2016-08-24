@@ -1,0 +1,23 @@
+{
+  "name": "react-quickstart",
+  "version": "1.0.0",
+  "description": "Reactjs,typescript,browserify quick start ",
+  "main": "src/main.tsx",
+  "scripts": {
+    "start": "budo src/main.tsx --open --live --title \"React quickstart with typeScript & browserify\" -- -p [ tsify --noImplicitAny --jsx=react]",
+    "prebuild": "browserify -r react -r react-dom  > dist/vendor.js",
+    "build": "browserify -x react -x react-dom src/main.tsx -p [ tsify --noImplicitAny --jsx=react] > dist/bundle.js",
+    "test": "mocha "
+  },
+  "author": "Dimpu Aravind Buddha",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1"
+  },
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "budo": "^9.0.0",
+    "tsify": "^1.0.3"
+  }
+}
