@@ -4,6 +4,7 @@
   "description": "Reactjs,typescript,browserify quick start ",
   "main": "src/main.tsx",
   "scripts": {
+    "prestart":"typings i",
     "start": "budo src/main.tsx --open --live --title \"React quickstart with typeScript & browserify\" -- -p [ tsify --noImplicitAny --jsx=react]",
     "prebuild": "browserify -r react -r react-dom  > dist/vendor.js",
     "build": "browserify -x react -x react-dom src/main.tsx -p [ tsify --noImplicitAny --jsx=react] > dist/bundle.js",
